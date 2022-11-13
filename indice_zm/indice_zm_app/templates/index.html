@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Indice de Zulemita -    WIP</h1>
+    <h3> Indice </h3>
+    {% for letter in all_letters %}
+        <h4>______</h4>
+        <h4>Titulo</h4>
+        <p>{{letter.titulo}}</p>
+        <h4>Serie</h4>
+        <p>{{letter.serie}}</p>
+        
+
+    {% endfor %}
+</body>
+</html>
