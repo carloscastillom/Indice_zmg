@@ -11,11 +11,19 @@
 <body>
     <h1>Indice de Zulemita - WIP</h1>
     <h3> Nuevas entrada </h3>
-    <form action="% url 'home' %" method ="post">
-        {% csrf_token % }
-        <input type ="text" name ="prueba" placeholder ="prueba"><br>
-        <input type ="text" name ="prueba" placeholder ="prueba"><br>
-        <input type ="submit" name ="prueba" placeholder ="prueba"><br>
+    <form action="{% url 'home' %}" method="post">
+        {% csrf_token %}
+        <input type ="text" name ="titulo" placeholder ="titulo"><br>
+        <input type ="text" name ="serie" placeholder ="serie"><br>
+        <input type ="text" name ="autor" placeholder ="autor"><br>
+        <input type ="text" name ="editor" placeholder ="editor"><br>
+        <input type ="text" name ="idioma" placeholder ="idioma"><br>
+        <input type ="text" name ="pag" placeholder ="pag"><br>
+        <input type ="text" name ="tipo" placeholder ="tipo"><br>
+        <input type ="text" name ="formato" placeholder ="formato"><br>
+        <input type ="text" name ="genero" placeholder ="genero"><br>
+        <input type ="submit" value="submit"><br>
+
     </form>
     <h3> Indice </h3>
     {% for letter in all_letters %}
